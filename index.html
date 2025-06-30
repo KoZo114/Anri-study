@@ -7,28 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div id="quiz-container">
         
-        <h1 id="genre-title">中学総まとめクイズ</h1>
+        <div id="info-header">
+            <p id="score-display">スコア: 0</p>
+            <p id="progress-text">1 / 50</p>
+        </div>
         
         <p id="quiz-subject">教科</p>
         
-        <div id="progress-container">
-            <div id="progress-bar"></div>
-        </div>
-        
-        <p id="progress-text">0/0</p>
-
         <div id="question-card">
             <p id="question-text">Q. 問題を読み込んでいます...</p>
         </div>
 
-        <div id="answer-card" class="hidden">
-            <p id="answer-text">A. 答え</p>
-        </div>
+        <div id="choices-container">
+            </div>
 
-        <button id="show-answer-btn">答えを見る</button>
+        <p id="feedback-text"></p>
+
         <button id="next-question-btn" class="hidden">次の問題へ</button>
 
     </div>
