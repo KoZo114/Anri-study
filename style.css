@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 15px 0 5px;
+}
+
+#progress-bar {
+    width: 4%; /* 初期値 (1/25) */
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+#progress-text {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+#question-card {
+    background-color: #e7f3ff;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#answer-card {
+    background-color: #e9f7ef;
+    border-left: 5px solid #28a745;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#show-answer-btn, #next-question-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* JavaScriptで表示/非表示を切り替えるためのクラス */
+.hidden {
+    display: none;
+}
+/* 教科名表示用のスタイルを追加 */
+#quiz-subject {
+    display: inline-block; /* 他に影響を与えないようにブロック化 */
+    background-color: #6c757d; /* 背景色を少し暗めに */
+    color: white; /* 文字色を白に */
+    padding: 4px 12px; /* 内側の余白 */
+    border-radius: 12px; /* 角を丸くする */
+    font-size: 0.9em; /* 文字を少し小さく */
+    margin-bottom: 15px; /* 下に余白を持たせる */
+}

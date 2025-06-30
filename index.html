@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一問一答クイズ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="quiz-container">
+        
+        <h1 id="genre-title">中学総まとめクイズ</h1>
+        
+        <p id="quiz-subject">教科</p>
+        
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        
+        <p id="progress-text">0/0</p>
+
+        <div id="question-card">
+            <p id="question-text">Q. 問題を読み込んでいます...</p>
+        </div>
+
+        <div id="answer-card" class="hidden">
+            <p id="answer-text">A. 答え</p>
+        </div>
+
+        <button id="show-answer-btn">答えを見る</button>
+        <button id="next-question-btn" class="hidden">次の問題へ</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
